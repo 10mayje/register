@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if messages %}
+    {% for mess in messages %}
+        <div>
+        <h3>{{ mess }}</h3>
+        <h5>{{ mess.tags }}</h5>
+        </div>
+    {% endfor %}
+{% endif %}
+{% for post in posts %}
+    <h1>{{ post.tittle }}</h1>
+    <h2>{{ post.author }}</h2>
+{% endfor %}
+in home page
+</body>
+</html>

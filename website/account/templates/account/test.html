@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form method="POST"  >
+     {% csrf_token %}
+     <fieldset>
+         <legend>join today</legend>
+           {{ form.as_p }}
+     </fieldset>
+  <button type="submit" value="join">join</button>
+ </form>
+</body>
+</html>
